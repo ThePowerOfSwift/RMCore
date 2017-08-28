@@ -12,7 +12,7 @@ import Bond
 public class RMTableRow {
     public var cellClass: RMTableViewCell.Type
     public var userInfo: Any?
-    public var delegate: AnyObject?
+    public weak var delegate: AnyObject?
     public var isSelected = Observable(false)
     public var isLastRow = false
     public var indexPath: IndexPath?
@@ -28,6 +28,6 @@ public class RMTableRow {
     }
     
     public func cellIdentifier() -> String {
-        return "cellType->\(cellClass)"
+        return cellClass.implicitReuseIdentifier
     }
 }
