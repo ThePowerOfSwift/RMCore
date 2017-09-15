@@ -7,13 +7,13 @@
 //
 
 import Foundation
-import Bond
+import ReactiveKit
 
 public class RMCollectionRow {
     public var cellClass: RMCollectionViewCell.Type
     public var userInfo: Any?
     public var delegate: AnyObject?
-    public var isSelected = Observable(false)
+    public var isSelected = Property(false)
     public var isLastRow = false
     public var indexPath: IndexPath?
     public var height: CGFloat?

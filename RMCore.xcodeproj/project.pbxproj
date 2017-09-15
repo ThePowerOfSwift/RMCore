@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A578A009C6A418F567FF9417 /* Pods_BasePods_RMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F75D6529A8FBED391CD867 /* Pods_BasePods_RMCore.framework */; };
 		A764DE791E395723001541E8 /* CollectionType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A764DE781E395723001541E8 /* CollectionType+Extensions.swift */; };
 		A7BB5E0A1CD36275007BC254 /* RMCore.h in Headers */ = {isa = PBXBuildFile; fileRef = A7BB5E091CD36275007BC254 /* RMCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7BB5E111CD36275007BC254 /* RMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BB5E061CD36275007BC254 /* RMCore.framework */; };
@@ -28,9 +27,11 @@
 		A7CA31471CD3EB8C0085AEB1 /* RMCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA31461CD3EB8C0085AEB1 /* RMCollectionViewCell.swift */; };
 		A7CA31491CD3EC320085AEB1 /* RMCollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA31481CD3EC320085AEB1 /* RMCollectionManager.swift */; };
 		A7DDA3091CFB57D300A92F50 /* RMCollectionSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DDA3081CFB57D300A92F50 /* RMCollectionSectionView.swift */; };
+		C20C522D1F2295C800DC3393 /* RMTableManager+Workaround.m in Sources */ = {isa = PBXBuildFile; fileRef = C20C522B1F2295C800DC3393 /* RMTableManager+Workaround.m */; };
+		C217282B1F6C343800BD2BB5 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C217282A1F6C343800BD2BB5 /* Dictionary+Extensions.swift */; };
 		C26AD1EE1F44B1A300D1F2BD /* HasReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26AD1ED1F44B1A300D1F2BD /* HasReuseIdentifier.swift */; };
 		C26AD1F01F44B28500D1F2BD /* HashableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26AD1EF1F44B28500D1F2BD /* HashableType.swift */; };
-		C20C522D1F2295C800DC3393 /* RMTableManager+Workaround.m in Sources */ = {isa = PBXBuildFile; fileRef = C20C522B1F2295C800DC3393 /* RMTableManager+Workaround.m */; };
+		CFC19E34BE55918BB18536AA /* Pods_BasePods_RMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32588194C2D037C89539FCCF /* Pods_BasePods_RMCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32588194C2D037C89539FCCF /* Pods_BasePods_RMCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasePods_RMCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E92011387E58159F85BDA1 /* Pods-BasePods-RMCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasePods-RMCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-BasePods-RMCore/Pods-BasePods-RMCore.release.xcconfig"; sourceTree = "<group>"; };
 		8C71DBAE9A58A694A13D1ABC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A764DE781E395723001541E8 /* CollectionType+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionType+Extensions.swift"; sourceTree = "<group>"; };
 		A7BB5E061CD36275007BC254 /* RMCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,12 +71,11 @@
 		A7CA31461CD3EB8C0085AEB1 /* RMCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMCollectionViewCell.swift; sourceTree = "<group>"; };
 		A7CA31481CD3EC320085AEB1 /* RMCollectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMCollectionManager.swift; sourceTree = "<group>"; };
 		A7DDA3081CFB57D300A92F50 /* RMCollectionSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMCollectionSectionView.swift; sourceTree = "<group>"; };
-		C05C78E65C8ED782AC03CB9D /* Pods-BasePods-RMCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasePods-RMCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BasePods-RMCore/Pods-BasePods-RMCore.debug.xcconfig"; sourceTree = "<group>"; };
+		C20C522B1F2295C800DC3393 /* RMTableManager+Workaround.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RMTableManager+Workaround.m"; sourceTree = "<group>"; };
+		C217282A1F6C343800BD2BB5 /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
 		C26AD1ED1F44B1A300D1F2BD /* HasReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasReuseIdentifier.swift; sourceTree = "<group>"; };
 		C26AD1EF1F44B28500D1F2BD /* HashableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashableType.swift; sourceTree = "<group>"; };
-		C20C522B1F2295C800DC3393 /* RMTableManager+Workaround.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RMTableManager+Workaround.m"; sourceTree = "<group>"; };
-		EBBA3CB844D4CCE0158C9010 /* Pods-BasePods-RMCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasePods-RMCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-BasePods-RMCore/Pods-BasePods-RMCore.release.xcconfig"; sourceTree = "<group>"; };
-		F0F75D6529A8FBED391CD867 /* Pods_BasePods_RMCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasePods_RMCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F875E4ECEC3428A0C0B3686E /* Pods-BasePods-RMCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasePods-RMCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BasePods-RMCore/Pods-BasePods-RMCore.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A578A009C6A418F567FF9417 /* Pods_BasePods_RMCore.framework in Frameworks */,
+				CFC19E34BE55918BB18536AA /* Pods_BasePods_RMCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,22 +98,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07F1769682FB61B296E6E2A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F875E4ECEC3428A0C0B3686E /* Pods-BasePods-RMCore.debug.xcconfig */,
+				88E92011387E58159F85BDA1 /* Pods-BasePods-RMCore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1DAD5A0A144493BBE845DB4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				8C71DBAE9A58A694A13D1ABC /* Pods.framework */,
-				F0F75D6529A8FBED391CD867 /* Pods_BasePods_RMCore.framework */,
+				32588194C2D037C89539FCCF /* Pods_BasePods_RMCore.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		261BB2A90B1FC6507CC1259E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C05C78E65C8ED782AC03CB9D /* Pods-BasePods-RMCore.debug.xcconfig */,
-				EBBA3CB844D4CCE0158C9010 /* Pods-BasePods-RMCore.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		A7BB5DFC1CD36275007BC254 = {
@@ -121,7 +123,7 @@
 				A7BB5E141CD36275007BC254 /* RMCoreTests */,
 				A7BB5E071CD36275007BC254 /* Products */,
 				1DAD5A0A144493BBE845DB4D /* Frameworks */,
-				261BB2A90B1FC6507CC1259E /* Pods */,
+				07F1769682FB61B296E6E2A6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +161,7 @@
 		A7BB5E201CD362F7007BC254 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C217282A1F6C343800BD2BB5 /* Dictionary+Extensions.swift */,
 				A7BB5E211CD362F7007BC254 /* UIView+Extensions.swift */,
 				A7CA31331CD3C8F40085AEB1 /* UIColor+Extensions.swift */,
 				A7CA31381CD3C9700085AEB1 /* String+Extensions.swift */,
@@ -254,12 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7BB5E1A1CD36275007BC254 /* Build configuration list for PBXNativeTarget "RMCore" */;
 			buildPhases = (
-				79DE2A16802A990EF66DF38D /* [CP] Check Pods Manifest.lock */,
+				90AC9DC1939502E3A1DE489F /* [CP] Check Pods Manifest.lock */,
 				A7BB5E011CD36275007BC254 /* Sources */,
 				A7BB5E021CD36275007BC254 /* Frameworks */,
 				A7BB5E031CD36275007BC254 /* Headers */,
 				A7BB5E041CD36275007BC254 /* Resources */,
-				8D8D45F5EEB8BE53DCFA089C /* [CP] Copy Pods Resources */,
+				AB99F6E9FED5317C76DB3C6E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -342,7 +345,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		79DE2A16802A990EF66DF38D /* [CP] Check Pods Manifest.lock */ = {
+		90AC9DC1939502E3A1DE489F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -354,10 +357,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8D8D45F5EEB8BE53DCFA089C /* [CP] Copy Pods Resources */ = {
+		AB99F6E9FED5317C76DB3C6E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -396,6 +399,7 @@
 				C26AD1EE1F44B1A300D1F2BD /* HasReuseIdentifier.swift in Sources */,
 				A7C2CE5E1CD52352006C5E3F /* CIImage+Extensions.swift in Sources */,
 				A7C2CE6C1CD59AED006C5E3F /* UIImage+Extensions.swift in Sources */,
+				C217282B1F6C343800BD2BB5 /* Dictionary+Extensions.swift in Sources */,
 				A764DE791E395723001541E8 /* CollectionType+Extensions.swift in Sources */,
 				A7BB5E2B1CD362F7007BC254 /* RMTableViewCell.swift in Sources */,
 				A7BB5E281CD362F7007BC254 /* UIView+Extensions.swift in Sources */,
@@ -521,7 +525,7 @@
 		};
 		A7BB5E1B1CD36275007BC254 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C05C78E65C8ED782AC03CB9D /* Pods-BasePods-RMCore.debug.xcconfig */;
+			baseConfigurationReference = F875E4ECEC3428A0C0B3686E /* Pods-BasePods-RMCore.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
@@ -540,7 +544,7 @@
 		};
 		A7BB5E1C1CD36275007BC254 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBBA3CB844D4CCE0158C9010 /* Pods-BasePods-RMCore.release.xcconfig */;
+			baseConfigurationReference = 88E92011387E58159F85BDA1 /* Pods-BasePods-RMCore.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;

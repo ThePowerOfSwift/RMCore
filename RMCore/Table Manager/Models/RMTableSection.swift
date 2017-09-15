@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Bond
+import ReactiveKit
 
 public class RMTableSection {
     public var rows: [RMTableRow] = []
@@ -18,7 +18,7 @@ public class RMTableSection {
     public var footerClass: RMTableSectionView.Type?
     public var footerHeight: CGFloat = 0
     public var userInfo: Any?
-    public var closed: Observable<Bool> = Observable(false)
+    public var closed: Property<Bool> = Property(false)
     public var section: Int = 0
     public var indexTitle: String?
 

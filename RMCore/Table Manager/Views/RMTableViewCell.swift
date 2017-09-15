@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Bond
 import ReactiveKit
 
 open class RMTableViewCell : UITableViewCell {
@@ -29,14 +28,14 @@ open class RMTableViewCell : UITableViewCell {
         observers.removeAll()
     }
     
-    public func observe<T>(observable: Observable<T>, observe: @escaping (T) -> Void) {
+    public func observe<T>(observable: Property<T>, observe: @escaping (T) -> Void) {
         let observer = observable.observeNext { (value) in
             observe(value)
         }
         observers.append(observer)
     }
     
-    public func observeNew<T>(observable: Observable<T>, observe: @escaping (T) -> Void) {
+    public func observeNew<T>(observable: Property<T>, observe: @escaping (T) -> Void) {
         let observer = observable.skip(first: 1).observeNext(with: { (value) in
             observe(value)
         })

@@ -7,13 +7,13 @@
 //
 
 import UIKit
-import Bond
+import ReactiveKit
 
 public class RMTableRow {
     public var cellClass: RMTableViewCell.Type
     public var userInfo: Any?
     public weak var delegate: AnyObject?
-    public var isSelected = Observable(false)
+    public var isSelected = Property(false)
     public var isLastRow = false
     public var indexPath: IndexPath?
     public var height: CGFloat?
