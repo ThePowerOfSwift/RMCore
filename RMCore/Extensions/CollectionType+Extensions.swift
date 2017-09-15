@@ -32,12 +32,12 @@ public extension Collection {
     }
     
     public func toGroups<GroupObjectType> (
-        groupObjectExtractor: (Generator.Element) -> GroupObjectType,
+        groupObjectExtractor: (Iterator.Element) -> GroupObjectType,
         groupObjectKeyExtractor: (GroupObjectType) -> String?,
         groupObjectNameExtractor: ((GroupObjectType) -> String?)? = nil)
-        -> [RMGroup<Generator.Element, GroupObjectType>]
+        -> [RMGroup<Iterator.Element, GroupObjectType>]
     {
-        var groupsByGroupObjectKey = [String : RMGroup<Generator.Element, GroupObjectType>]()
+        var groupsByGroupObjectKey = [String : RMGroup<Iterator.Element, GroupObjectType>]()
 
         for object in self {
             let groupObject = groupObjectExtractor(object)
@@ -46,7 +46,7 @@ public extension Collection {
 
             let group = groupsByGroupObjectKey.findOrCreate(at: groupObjectKey) {
                 let groupObjectName = groupObjectNameExtractor?(groupObject)
-                return RMGroup<Generator.Element, GroupObjectType>(groupObject: groupObject, name: groupObjectName ?? groupObjectKey)
+                return RMGroup<Iterator.Element, GroupObjectType>(groupObject: groupObject, name: groupObjectName ?? groupObjectKey)
             }
             group.objects.append(object)
         }
@@ -60,10 +60,8 @@ public extension Collection {
         }
         return nil
     }
-}
 
-public extension Collection where Indices.Iterator.Element == Index {
-    public subscript (safe index: Index) -> Generator.Element? {
+    public subscript (safe index: Index) -> Iterator.Element? {
         return indices.contains(index) ? self[index] : nil
     }
 }

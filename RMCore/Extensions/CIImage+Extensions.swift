@@ -12,7 +12,7 @@ public extension CIImage {
     public func overlay(rectangle: CIRectangleFeature, color: UIColor = UIColor(hex: 0xfff04b, alpha: 0.2)) -> CIImage {
         var overlay = CIImage(color: CIColor(cgColor: color.cgColor))
         
-        overlay = overlay.cropping(to: extent)
+        overlay = overlay.cropped(to: extent)
         
         let parameters: [String: Any] = ["inputExtent": CIVector(cgRect: extent),
                                          "inputTopLeft": CIVector(cgPoint: rectangle.topLeft),
@@ -20,9 +20,9 @@ public extension CIImage {
                                          "inputBottomLeft": CIVector(cgPoint: rectangle.bottomLeft),
                                          "inputBottomRight": CIVector(cgPoint: rectangle.bottomRight)]
         
-        overlay = overlay.applyingFilter("CIPerspectiveTransformWithExtent", withInputParameters: parameters)
+        overlay = overlay.applyingFilter("CIPerspectiveTransformWithExtent", parameters: parameters)
         
-        return overlay.compositingOverImage(self)
+        return overlay.composited(over: self)
     }
     
     public func constrastFilter(contrast: Float = 1.1) -> CIImage? {
@@ -52,7 +52,7 @@ public extension CIImage {
                                          "inputBottomLeft": CIVector(cgPoint: rectangle.bottomLeft),
                                          "inputBottomRight": CIVector(cgPoint: rectangle.bottomRight)]
         
-        return applyingFilter("CIPerspectiveCorrection", withInputParameters: parameters)
+        return applyingFilter("CIPerspectiveCorrection", parameters: parameters)
     }
     
     public func scaleFilter(scale: Float) -> CIImage? {
