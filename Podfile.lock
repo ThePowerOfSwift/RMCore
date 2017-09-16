@@ -1,18 +1,12 @@
 PODS:
-  - Bond (6.0.0):
-    - Diff (~> 0.4)
-    - ReactiveKit (~> 3.3)
-  - Diff (0.5.0)
-  - ReactiveKit (3.3.0)
+  - ReactiveKit (3.6.2)
 
 DEPENDENCIES:
-  - Bond (~> 6.0)
+  - ReactiveKit (~> 3.6)
 
 SPEC CHECKSUMS:
-  Bond: d34e0c37e829c991d3ef80aa860f647d677e7801
-  Diff: eceb93a3adf508574ba9b8560da185ace83de055
-  ReactiveKit: 56a5b949847ba137da40045149785e569f292e07
+  ReactiveKit: 59813e52505065d14fa77b453d8be5981eced6b7
 
-PODFILE CHECKSUM: 1cb43c8f8a74c9e769ca0b0fd4fa3d481b30b217
+PODFILE CHECKSUM: f06c951a7148627ed02b9cd891dacf8ae2d46cb2
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

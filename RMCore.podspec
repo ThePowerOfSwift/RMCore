@@ -10,5 +10,5 @@ Pod::Spec.new do |spec|
     spec.source_files   = 'RMCore', 'RMCore/**/*.{swift}'
     spec.exclude_files  = 'RMCore/Exclude'
 
-    spec.dependency 'Bond', '~> 6.0'
+    spec.dependency 'ReactiveKit', '~> 3.6'
 end

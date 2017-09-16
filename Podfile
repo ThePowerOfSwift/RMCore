@@ -1,7 +1,7 @@
 use_frameworks!
 
 abstract_target 'BasePods' do
-    pod 'Bond', '~> 6.0'
+    pod 'ReactiveKit', '~> 3.6'
 
     target 'RMCore' do
     end
