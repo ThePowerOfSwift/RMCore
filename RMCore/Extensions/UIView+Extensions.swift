@@ -56,7 +56,8 @@ public extension UIView {
             return frame.maxX
         }
     }
-    
+
+    @objc
     public func removeAllSubviews() {
         for subview in subviews {
             subview.removeFromSuperview()
